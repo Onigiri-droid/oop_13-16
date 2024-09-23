@@ -33,11 +33,3 @@ public class SimpleGui implements ActionListener {
         frame.repaint();
     }
 }
-
-class MyDrawPanel extends JPanel {
-    public void paint(Graphics g) {
-        super.paint(g);
-        g.setColor(Color.red);
-        g.fillRect(0, 0, getWidth(), getHeight());
-    }
-}
