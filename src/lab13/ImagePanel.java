@@ -9,7 +9,9 @@ public class ImagePanel extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);  // Не забываем вызывать родительский метод
         java.awt.Image image = new ImageIcon("image/ww-img.jpg").getImage();
-        g.drawImage(image, 3, 4, this);
+        int panelWidth = getWidth();
+        int panelHeight = getHeight();
+        g.drawImage(image, 3, 4, panelWidth / 2, panelHeight / 2, null);
     }
 
     public static void main(String[] args) {

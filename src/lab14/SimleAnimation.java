@@ -30,7 +30,7 @@ public class SimleAnimation {
             draw.repaint();
 
             try {
-                Thread.sleep(50);
+                Thread.sleep(10);
             } catch (Exception e) {}
         }
     }
