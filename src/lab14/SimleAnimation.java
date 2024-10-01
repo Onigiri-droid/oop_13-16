@@ -22,13 +22,17 @@ public class SimleAnimation {
         frame.setSize(300, 300);
         frame.setVisible(true);
 
+        for (int i = 0; i < 130; i++) {  // Движение вниз
+            y++;
+            draw.repaint();
+            try {
+                Thread.sleep(10);
+            } catch (Exception e) {}
+        }
 
         for (int i = 0; i < 130; i++) {
             x++;
-            y++;
-
             draw.repaint();
-
             try {
                 Thread.sleep(10);
             } catch (Exception e) {}

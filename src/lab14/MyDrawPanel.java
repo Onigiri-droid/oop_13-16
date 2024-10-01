@@ -6,7 +6,9 @@ import java.awt.*;
 class MyDrawPanel extends JPanel {
     public void paint(Graphics g) {
         super.paintComponent(g); // вызов метода родителя для корректной отрисовки
+//        g.setColor(Color.CYAN);
         g.fillRect(0, 0, this.getWidth(), this.getHeight());
+
 
         int red = (int)(Math.random() * 255);
         int green = (int)(Math.random() * 255);

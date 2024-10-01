@@ -22,7 +22,7 @@ public class Animate {
         frame.setSize(500, 270);
         frame.setVisible(true);
 
-        for (int i = 0; i < 124; i++, y++, x++) {
+        for (int i = 0; i <= 124; i++, y++, x++) {
             drawP.setSize(500, 270);
             drawP.repaint();
             try {
